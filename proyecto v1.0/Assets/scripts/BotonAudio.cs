@@ -6,19 +6,59 @@ using UnityEngine.UI;
 public class BotonAudio : MonoBehaviour {
 
     public Image UIimagen;
-    private int x=0; // determinarea en que imagen esta 
+    private int x = 0; // determinarea en que imagen esta 
 
-	// Use this for initialization
-	void Start ()
+    // con esto agregamos los clip de audio
+    public AudioClip menu1;
+    public AudioClip menu2;
+    public AudioClip menu3;
+    public AudioClip menu4;
+
+    //donde se reproduce el sonido
+    AudioSource reproductor;
+
+    private float random;
+   
+
+    // Use this for initialization
+    void Start ()
     {
+        random = 0;
+        reproductor = GetComponent<AudioSource>();
         UIimagen = GameObject.Find("sonido").GetComponent<Image>();
         UIimagen.sprite = Resources.Load<Sprite>("sprites/S1");
+
+        random = Random.Range(1, 5);
+
+        // aqui se escoge que cancion se tocara
+
+        if (random==1)
+        {
+            reproductor.clip = menu1;
+        }
+        if (random == 2)
+        {
+            reproductor.clip = menu2;
+        }
+        if (random == 3)
+        {
+            reproductor.clip = menu3;
+        }
+        if (random == 4)
+        {
+            reproductor.clip = menu4;
+        }
+
+        reproductor.Play();
+
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update ()
+    {
+       
+
+    }
 
     public void click ()
     {
@@ -27,10 +67,12 @@ public class BotonAudio : MonoBehaviour {
         {        
             x = 1;
             UIimagen.sprite = Resources.Load<Sprite>("sprites/S2");
+            reproductor.Pause();
         }else    
         {
             x = 0;
             UIimagen.sprite = Resources.Load<Sprite>("sprites/S1");
+            reproductor.Play();
         }
 
     }

@@ -6,7 +6,7 @@ public class movfondomenu : MonoBehaviour {
 
     public float speed = -2f;          // la velocidad del fondo 
     private float posreini = -24.21f; //la posicion donde se reinicia
-    private float posini = 80.28f;      // donde aparece de nuevo 
+    private float posini = 79.9f;      // donde aparece de nuevo 
 
 
 
