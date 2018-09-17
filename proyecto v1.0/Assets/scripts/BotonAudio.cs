@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BotonAudio : MonoBehaviour {
 
@@ -32,7 +33,7 @@ public class BotonAudio : MonoBehaviour {
 
         // aqui se escoge que cancion se tocara
 
-        if (random==1)
+        if (random == 1)
         {
             reproductor.clip = menu1;
         }
@@ -60,7 +61,7 @@ public class BotonAudio : MonoBehaviour {
 
     }
 
-    public void click ()
+    public void click () // en esta clase eliminamos y ponemos el audio 
     {
         
         if (x == 0)
@@ -75,5 +76,35 @@ public class BotonAudio : MonoBehaviour {
             reproductor.Play();
         }
 
+    }
+
+    public void irescenaopciones()
+    {
+        SceneManager.LoadScene("menuopciones");
+    }
+
+    public void irescenaseleccion()
+    {
+        SceneManager.LoadScene("menuselecion");
+    }
+
+    public void irescenaseleccionjuego()
+    {
+        SceneManager.LoadScene("seleccionjuego");
+    }
+    public void Atras1()
+    {
+        SceneManager.LoadScene("menuprincipal");
+    }
+    public void Atras2()
+    {
+        SceneManager.LoadScene("menuselecion");
+    }
+
+    public void quitar()
+    {
+        Application.Quit();
+
+        Debug.Log("salir");
     }
 }
