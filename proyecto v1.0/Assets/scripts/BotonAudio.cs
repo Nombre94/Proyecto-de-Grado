@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BotonAudio : MonoBehaviour {
 
     public Image UIimagen;
-    private int x = 0; // determinarea en que imagen esta 
+    private int x = 0; // determinarea en que imagen esta
 
     // con esto agregamos los clip de audio
     public AudioClip menu1;
@@ -19,7 +19,7 @@ public class BotonAudio : MonoBehaviour {
     AudioSource reproductor;
 
     private float random;
-   
+
 
     // Use this for initialization
     void Start ()
@@ -53,23 +53,23 @@ public class BotonAudio : MonoBehaviour {
         reproductor.Play();
 
     }
-	
+
 	// Update is called once per frame
 	void Update ()
     {
-       
+
 
     }
 
-    public void click () // en esta clase eliminamos y ponemos el audio 
+    public void click () // en esta clase eliminamos y ponemos el audio
     {
-        
+
         if (x == 0)
-        {        
+        {
             x = 1;
             UIimagen.sprite = Resources.Load<Sprite>("sprites/S2");
             reproductor.Pause();
-        }else    
+        }else
         {
             x = 0;
             UIimagen.sprite = Resources.Load<Sprite>("sprites/S1");
@@ -107,4 +107,22 @@ public class BotonAudio : MonoBehaviour {
 
         Debug.Log("salir");
     }
+
+//  public float musicVolume = 1f;
+//
+//	// Update is called once per frame
+//	void Update () {
+//
+//        // Setting volume option of Audio Source to be equal to musicVolume
+//        reproductor.volume = musicVolume;
+//	}
+//
+//    // Method that is called by slider game object
+//    // This method takes vol value passed by slider
+//    // and sets it as musicValue
+//    public void SetVolume(float vol)
+//    {
+//        musicVolume = vol;
+//    }
+
 }
