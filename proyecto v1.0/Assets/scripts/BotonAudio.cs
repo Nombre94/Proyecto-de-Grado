@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BotonAudio : MonoBehaviour {
 
-    public Image UIimagen;
+   
     private int x = 0; // determinarea en que imagen esta
 
     // con esto agregamos los clip de audio
@@ -20,14 +20,18 @@ public class BotonAudio : MonoBehaviour {
 
     private float random;
 
+    // para el slider 
+
+    public Slider volumen;
+
+
 
     // Use this for initialization
     void Start ()
     {
         random = 0;
         reproductor = GetComponent<AudioSource>();
-        UIimagen = GameObject.Find("sonido").GetComponent<Image>();
-        UIimagen.sprite = Resources.Load<Sprite>("sprites/S1");
+      
 
         random = Random.Range(1, 5);
 
@@ -57,7 +61,7 @@ public class BotonAudio : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
+        reproductor.volume = volumen.value;
 
     }
 
@@ -67,46 +71,18 @@ public class BotonAudio : MonoBehaviour {
         if (x == 0)
         {
             x = 1;
-            UIimagen.sprite = Resources.Load<Sprite>("sprites/S2");
+            
             reproductor.Pause();
         }else
         {
             x = 0;
-            UIimagen.sprite = Resources.Load<Sprite>("sprites/S1");
+            
             reproductor.Play();
         }
 
     }
 
-    public void irescenaopciones()
-    {
-        SceneManager.LoadScene("menuopciones");
-    }
-
-    public void irescenaseleccion()
-    {
-        SceneManager.LoadScene("menuselecion");
-    }
-
-    public void irescenaseleccionjuego()
-    {
-        SceneManager.LoadScene("seleccionjuego");
-    }
-    public void Atras1()
-    {
-        SceneManager.LoadScene("menuprincipal");
-    }
-    public void Atras2()
-    {
-        SceneManager.LoadScene("menuselecion");
-    }
-
-    public void quitar()
-    {
-        Application.Quit();
-
-        Debug.Log("salir");
-    }
+   
 
 //  public float musicVolume = 1f;
 //
