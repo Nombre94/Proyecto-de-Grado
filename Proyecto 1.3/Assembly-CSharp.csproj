@@ -65,6 +65,7 @@
     <Compile Include="Assets\MenuUI\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\MenuUI\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts\compartidos\Scroll.cs" />
+    <Compile Include="Assets\Scripts\juego\Movimiento.cs" />
     <Compile Include="Assets\Scripts\menu\BotonAudio.cs" />
     <Compile Include="Assets\Scripts\menu\movfondomenu.cs" />
     <Compile Include="Assets\Scripts\menu\Movopciones.cs" />
