@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 421}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 26120
+  controlID: 1444
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 26121
+  controlID: 1406
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,9 +374,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.231007, y: -3.1807225, z: 0.03768232}
+    m_Target: {x: -2.0177603, y: -1.354223, z: 0}
     speed: 2
-    m_Value: {x: -7.231007, y: -3.1807225, z: 0.03768232}
+    m_Value: {x: -2.0177603, y: -1.354223, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -408,9 +408,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.978074
+    m_Target: 14.138713
     speed: 2
-    m_Value: 7.978074
+    m_Value: 14.138713
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 3528
+  m_LastSelectedObjectID: 3566
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00ccfbff
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e6fbffff00000000c80d0000
+    m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,20 +617,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/animaciones/juego
+    - Assets/Scripts/compartidos
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/animaciones/juego
+  - Assets/Scripts/compartidos
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Proyecto-de-Grado\Proyecto 1.3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c60a0000
-    m_LastClickedID: 2758
-    m_ExpandedIDs: 000000005a0900006a0d000000ca9a3b
+    m_SelectedIDs: 7a090000
+    m_LastClickedID: 2426
+    m_ExpandedIDs: 0000000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -658,7 +658,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a090000a80c00006a0d00006e0d000000ca9a3b
+    m_ExpandedIDs: 000000005c090000700d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
