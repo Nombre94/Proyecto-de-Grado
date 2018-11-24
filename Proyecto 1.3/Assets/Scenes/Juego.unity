@@ -484,10 +484,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 941479681}
+  - component: {fileID: 941479682}
   m_Layer: 0
   m_Name: Creacion piso
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -498,12 +499,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941479680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.76, y: -4.316999, z: 0.083984375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 26.76, y: -4.316999, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941479682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 941479680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1c87cede6b7ab4eb4ebdb5dc083af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1617194022435580, guid: 047ab7115021d1c4f9b532038c9a8819, type: 2}
+  - {fileID: 1587626837265468, guid: 1f1d6ab5dd4130543bb9b19c92fe6457, type: 2}
+  - {fileID: 1545248510845524, guid: 4454d695dfa0eee4ea3de736b8d52d74, type: 2}
 --- !u!1 &1046245123
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +584,7 @@ Transform:
   m_LocalScale: {x: 28.334723, y: 9.839234, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1046245126
 MonoBehaviour:
@@ -598,10 +614,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1160219830}
-  m_Layer: 0
+  - component: {fileID: 1160219831}
+  m_Layer: 12
   m_Name: Creacion Obstaculo Techo
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -611,13 +628,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160219829}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.54, y: 1.751, z: 0.0756021}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 22.54, y: 1.751, z: -1.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1160219831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160219829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c737d856d2cafae49b93a7347e29e51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1001877452486110, guid: 5ad169c55e126224ba318f7d34701aad, type: 2}
+  - {fileID: 1097152972179692, guid: d08fa7e1ca57d584287fb79da20b27fd, type: 2}
+  - {fileID: 1589106450016682, guid: 24b299fb8cdbca2439927e1c7fe50e1f, type: 2}
 --- !u!1 &1333074600
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,10 +658,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1333074601}
-  m_Layer: 0
+  - component: {fileID: 1333074602}
+  m_Layer: 11
   m_Name: Creacion Techo 1
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -640,12 +673,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1333074600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.07, y: 3.353, z: 0.083984375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 26.07, y: 3.353, z: -1.08}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333074602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333074600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1c87cede6b7ab4eb4ebdb5dc083af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1617194022435580, guid: 047ab7115021d1c4f9b532038c9a8819, type: 2}
+  - {fileID: 1587626837265468, guid: 1f1d6ab5dd4130543bb9b19c92fe6457, type: 2}
+  - {fileID: 1545248510845524, guid: 4454d695dfa0eee4ea3de736b8d52d74, type: 2}
 --- !u!1 &1508634497
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,10 +790,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1663025273}
-  m_Layer: 0
+  - component: {fileID: 1663025274}
+  m_Layer: 13
   m_Name: Creacion Obstaculos Suelo
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -756,12 +805,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1663025272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.54, y: -3.083, z: 0.083984375}
+  m_LocalPosition: {x: 22.54, y: -3.083, z: -1.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1663025274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1663025272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c737d856d2cafae49b93a7347e29e51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1001877452486110, guid: 5ad169c55e126224ba318f7d34701aad, type: 2}
+  - {fileID: 1097152972179692, guid: d08fa7e1ca57d584287fb79da20b27fd, type: 2}
+  - {fileID: 1589106450016682, guid: 24b299fb8cdbca2439927e1c7fe50e1f, type: 2}
 --- !u!1 &1821029398
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,12 +925,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2146424742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.05, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.049999952, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2146424746
 MonoBehaviour:

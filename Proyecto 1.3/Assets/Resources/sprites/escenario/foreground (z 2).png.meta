@@ -7,6 +7,7 @@ TextureImporter:
     21300004: foreground (z 2)_2
     21300006: foreground (z 2)_3
     21300008: foreground (z 2)_4
+    21300010: foreground (z 2)_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -177,13 +178,33 @@ TextureImporter:
         width: 1026
         height: 567
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 171f0fa3af38de94db513552c85c9bc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foreground (z 2)_5
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 637
+        width: 317
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e7f71925edda0408f87db1a6a5e01f
       vertices: []
       indices: 
       edges: []

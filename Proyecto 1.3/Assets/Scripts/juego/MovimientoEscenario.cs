@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovimientoEscenario : MonoBehaviour {
 
     public float vel;
+     float des = -23.59f; // posicion donde se detruyen los escenarios y obstaculos
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,11 @@ public class MovimientoEscenario : MonoBehaviour {
 	void Update () {
 
         transform.Translate(-vel * Time.deltaTime, 0, 0);
+
+        if (transform.position.x <des)
+        {
+            Destroy(gameObject);
+        }
 
     }
 }

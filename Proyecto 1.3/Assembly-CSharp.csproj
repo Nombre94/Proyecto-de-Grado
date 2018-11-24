@@ -66,6 +66,8 @@
     <Compile Include="Assets\MenuUI\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts\compartidos\RelacionDeAspecto.cs" />
     <Compile Include="Assets\Scripts\compartidos\Scroll.cs" />
+    <Compile Include="Assets\Scripts\juego\CreacionDeObstaculos.cs" />
+    <Compile Include="Assets\Scripts\juego\GeneracionDeEscenario.cs" />
     <Compile Include="Assets\Scripts\juego\Movimiento.cs" />
     <Compile Include="Assets\Scripts\juego\MovimientoEscenario.cs" />
     <Compile Include="Assets\Scripts\menu\BotonAudio.cs" />
