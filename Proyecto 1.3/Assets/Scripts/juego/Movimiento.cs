@@ -16,6 +16,8 @@ public class Movimiento : MonoBehaviour {
     float radiosuelo = 0.2f;
     public LayerMask capasuelo;
     public Transform chesuelo;
+    public Transform cheSuelDeslis;
+    bool ensueloDeslis=false;
 
 
     // Use this for initialization
@@ -47,18 +49,21 @@ public class Movimiento : MonoBehaviour {
         ensuelo = Physics2D.OverlapCircle(chesuelo.position, radiosuelo, capasuelo);  // por medio de este codigo certifica que ya aterrizo para seguir corriendo 
         anim.SetBool("salto", ensuelo);
 
-        if (Input.GetKeyDown("down")) // en esta parte acata la orden de deslizarse y comprueba que este en el suelo 
+        if (Input.GetKeyDown("down") & ensuelo == true) // en esta parte acata la orden de deslizarse y comprueba que este en el suelo 
         {
-            if (ensuelo ==true)
-            {
-                anim.SetBool("deslis", true);
-                
+            anim.SetBool("deslis", true);
 
-            }
-           
 
         }
-       
+
+        ensueloDeslis= Physics2D.OverlapCircle(cheSuelDeslis.position, radiosuelo, capasuelo);
+
+        if (ensueloDeslis == true)
+        {
+            anim.SetBool("deslis", false);
+        }
+
+
 
     }
 
