@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class BotonAudio : MonoBehaviour {
 
    
@@ -62,6 +63,7 @@ public class BotonAudio : MonoBehaviour {
 	void Update ()
     {
         reproductor.volume = volumen.value;
+        GameManager.volmusic = volumen.value;
 
     }
 
