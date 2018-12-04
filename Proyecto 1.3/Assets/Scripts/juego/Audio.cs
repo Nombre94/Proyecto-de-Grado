@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Audio : MonoBehaviour {
@@ -12,6 +13,8 @@ public class Audio : MonoBehaviour {
 
     AudioSource reproductor;
 
+    public Slider volumen;
+
     private float random;
 
     // Use this for initialization
@@ -19,7 +22,8 @@ public class Audio : MonoBehaviour {
 
         random = 0;
         reproductor = GetComponent<AudioSource>();
-        reproductor.volume = GameManager.volmusic;
+     
+        volumen.value = GameManager.volmusic;
 
         random = Random.Range(1, 4);
 
@@ -44,6 +48,9 @@ public class Audio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        reproductor.volume = volumen.value;
+        GameManager.volmusic = volumen.value;
+
+    }
 }

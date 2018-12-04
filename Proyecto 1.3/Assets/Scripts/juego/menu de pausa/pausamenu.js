@@ -38,3 +38,9 @@ function Menu(i : String)
 {
 	Application.LoadLevel(i);
 }
+
+function volvermenu()
+{
+   ObjPausa.SetActive(false);
+   Time.timeScale = 1;
+}

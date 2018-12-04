@@ -32,7 +32,13 @@ public class BotonAudio : MonoBehaviour {
     {
         random = 0;
         reproductor = GetComponent<AudioSource>();
-      
+
+        // esta parte es para verificar si se hizo algun cambio del volumen en el juego 
+        if (GameManager.volmusic>0)
+        {
+            volumen.value = GameManager.volmusic;
+        }
+        
 
         random = Random.Range(1, 5);
 

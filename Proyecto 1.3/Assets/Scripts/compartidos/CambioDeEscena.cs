@@ -19,4 +19,10 @@ public class CambioDeEscena : MonoBehaviour {
     {
         SceneManager.LoadScene("Juego");
     }
+
+    public void Menu()
+    {
+        
+        SceneManager.LoadScene("Menu");
+    }
 }
