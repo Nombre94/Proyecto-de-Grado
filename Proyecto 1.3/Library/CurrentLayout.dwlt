@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 909, y: 421}
-  m_MaxSize: {x: 22004, y: 10000}
+  m_MinSize: {x: 913, y: 421}
+  m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 5392
+  controlID: 520
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 5393
+  controlID: 521
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,9 +374,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.114627406, y: 0.9459016, z: -0.0024429173}
+    m_Target: {x: 0.44951993, y: -2.2817686, z: 0.05379447}
     speed: 2
-    m_Value: {x: 0.114627406, y: 0.9459016, z: -0.0024429173}
+    m_Value: {x: 0.44951993, y: -2.2817686, z: 0.05379447}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -408,9 +408,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.164738
+    m_Target: 8.648164
     speed: 2
-    m_Value: 14.164738
+    m_Value: 8.648164
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -553,10 +553,10 @@ MonoBehaviour:
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 5691fdffe6fbffff000000008e0e0000
+    scrollPos: {x: 0, y: 411}
+    m_SelectedIDs: 364cfcff
+    m_LastClickedID: -242634
+    m_ExpandedIDs: e6fbffff00000000760f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,20 +617,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/teclado
+    - Assets/Scripts/juego
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/teclado
+  - Assets/Scripts/juego
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\jftc_\Documents\GitHub\Proyecto-de-Grado\Proyecto 1.3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 100b0000
-    m_LastClickedID: 2832
-    m_ExpandedIDs: 000000007009000094090000e20c00005e0d00008c0d000000ca9a3b
+    m_SelectedIDs: 720b0000
+    m_LastClickedID: 2930
+    m_ExpandedIDs: 000000007009000098090000bc0d00003c0e00006a0e0000960e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -658,7 +658,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007009000094090000e20c00005e0d00008c0d000000ca9a3b
+    m_ExpandedIDs: 000000007009000098090000bc0d00003c0e00006a0e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: fa0c0000fc2c0000dc0b0000560b0000800a0000e80c0000f60c0000160d0000ac0c0000380a0000ce0c0000680d0000dc0a00000a0a0000840d00003e0d00004a320000180a000070300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
