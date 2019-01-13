@@ -10,7 +10,7 @@ public class Tecleo : MonoBehaviour {
     float tamaño=26;
     
     string[] abc; // este array contendra las letras bases del teclado
-    string[,] esp;// este array contendra las letras especiales del teclado y una ayuda para determinar la forma a generar 
+    string[] esp;// este array contendra las letras especiales del teclado 
 
 
     int conf=0; // esta variable es para confirmar que ya se presiono una tecla base y no salte a las especiales 
@@ -66,8 +66,9 @@ public class Tecleo : MonoBehaviour {
         abc = new string[] {"q", "w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l",
                                 "z","x","c","v","b","n","m"} ;
 
-        esp = new string[,] { { "1","2","3","4","5","6","7","8","9","0",".",",","-","slash"} ,
-                            {"uno", "uno", "uno", "uno", "uno", "uno", "uno", "uno", "uno", "uno","uno","uno","uno","uno"} };
+        esp = new string[]  { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", ",", "-", "slash", "delete", "tab" ,"mayus","shif"
+                              ,"space","ctrl","alt","enter"} ;
+                           
 
     }
  
@@ -157,7 +158,63 @@ public class Tecleo : MonoBehaviour {
                                                             if (Input.GetKeyDown(KeyCode.Backslash))
                                                             {
                                                                 x = 14;
-                                                            }                                                          
+                                                            }    
+                                                            else
+                                                            {
+                                                                if (Input.GetKeyDown(KeyCode.Backspace))
+                                                                {
+                                                                    x = 15;
+                                                                }
+                                                                else
+                                                                {
+                                                                    if (Input.GetKeyDown(KeyCode.Tab))
+                                                                    {
+                                                                        x = 16;
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        if (Input.GetKeyDown(KeyCode.CapsLock))
+                                                                        {
+                                                                            x = 17;
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            if (Input.GetKeyDown(KeyCode.RightShift) | Input.GetKeyDown(KeyCode.LeftShift))
+                                                                            {
+                                                                                x = 18;
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                if (Input.GetKeyDown(KeyCode.Space))
+                                                                                {
+                                                                                    x = 19;
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    if (Input.GetKeyDown(KeyCode.RightControl) | Input.GetKeyDown(KeyCode.LeftControl))
+                                                                                    {
+                                                                                        x = 20;
+                                                                                    }
+                                                                                    else
+                                                                                    {
+                                                                                        if (Input.GetKeyDown(KeyCode.RightAlt) | Input.GetKeyDown(KeyCode.LeftAlt))
+                                                                                        {
+                                                                                            x = 21;
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            if (Input.GetKeyDown(KeyCode.Return))
+                                                                                            {
+                                                                                                x = 22;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -176,11 +233,8 @@ public class Tecleo : MonoBehaviour {
 
         if (x>0)
         {
-            name = esp[0, x-1];
-            if (esp[1,x-1]=="uno")
-            {
-                layer = 14;
-            }
+            name = esp[x-1];           
+            layer = 14;            
             generar();
         }
 
