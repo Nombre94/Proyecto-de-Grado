@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 245780841}
   - component: {fileID: 245780842}
   m_Layer: 14
-  m_Name: alt_der
+  m_Name: alt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3108,7 +3108,7 @@ GameObject:
   - component: {fileID: 1102090519}
   - component: {fileID: 1102090520}
   m_Layer: 14
-  m_Name: ctrl_izq
+  m_Name: ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4544,7 +4544,7 @@ GameObject:
   - component: {fileID: 1877042760}
   - component: {fileID: 1877042761}
   m_Layer: 14
-  m_Name: alt_izq
+  m_Name: alt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5036,7 +5036,7 @@ GameObject:
   - component: {fileID: 2081394778}
   - component: {fileID: 2081394779}
   m_Layer: 14
-  m_Name: ctrl_der
+  m_Name: ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

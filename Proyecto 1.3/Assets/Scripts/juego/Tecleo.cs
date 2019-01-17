@@ -71,165 +71,120 @@ public class Tecleo : MonoBehaviour {
                            
 
     }
- 
+
     // aca es donde se determinaran las letras especiales que el usaurio pueda presionar 
 
-    void especiales ()
+    void especiales()
     {
         x = 0;
         if (Input.GetKeyDown(KeyCode.Keypad1) | Input.GetKeyDown(KeyCode.Alpha1))
         {
             x = 1;
         }
-        else
+        if (Input.GetKeyDown(KeyCode.Keypad2) | Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (Input.GetKeyDown(KeyCode.Keypad2) | Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                x = 2;
-            }
-            else
-            {
-                if (Input.GetKeyDown(KeyCode.Keypad3) | Input.GetKeyDown(KeyCode.Alpha3))
-                {
-                    x = 3;
-                }
-                else
-                {
-                    if (Input.GetKeyDown(KeyCode.Keypad4) | Input.GetKeyDown(KeyCode.Alpha4))
-                    {
-                        x = 4;
-                    }
-                    else
-                    {
-                        if (Input.GetKeyDown(KeyCode.Keypad5) | Input.GetKeyDown(KeyCode.Alpha5))
-                        {
-                            x = 5;
-                        }
-                        else
-                        {
-                            if (Input.GetKeyDown(KeyCode.Keypad6) | Input.GetKeyDown(KeyCode.Alpha6))
-                            {
-                                x = 6;
-                            }
-                            else
-                            {
-                                if (Input.GetKeyDown(KeyCode.Keypad7) | Input.GetKeyDown(KeyCode.Alpha7))
-                                {
-                                    x = 7;
-                                }
-                                else
-                                {
-                                    if (Input.GetKeyDown(KeyCode.Keypad8) | Input.GetKeyDown(KeyCode.Alpha8))
-                                    {
-                                        x = 8;
-                                    }
-                                    else
-                                    {
-                                        if (Input.GetKeyDown(KeyCode.Keypad9) | Input.GetKeyDown(KeyCode.Alpha9))
-                                        {
-                                            x = 9;
-                                        }
-                                        else
-                                        {
-                                            if (Input.GetKeyDown(KeyCode.Keypad0) | Input.GetKeyDown(KeyCode.Alpha0))
-                                            {
-                                                x = 10;
-                                            }
-                                            else
-                                            {
-                                               if (Input.GetKeyDown(KeyCode.Period))
-                                                {
-                                                    x = 11;
-                                                }
-                                               else
-                                                {
-                                                    if (Input.GetKeyDown(KeyCode.Comma))
-                                                    {
-                                                        x = 12;
-                                                    }
-                                                    else
-                                                    {
-                                                        if (Input.GetKeyDown(KeyCode.Minus))
-                                                        {
-                                                            x = 13;
-                                                        }
-                                                        else
-                                                        {
-                                                            if (Input.GetKeyDown(KeyCode.Backslash))
-                                                            {
-                                                                x = 14;
-                                                            }    
-                                                            else
-                                                            {
-                                                                if (Input.GetKeyDown(KeyCode.Backspace))
-                                                                {
-                                                                    x = 15;
-                                                                }
-                                                                else
-                                                                {
-                                                                    if (Input.GetKeyDown(KeyCode.Tab))
-                                                                    {
-                                                                        x = 16;
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        if (Input.GetKeyDown(KeyCode.CapsLock))
-                                                                        {
-                                                                            x = 17;
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                            if (Input.GetKeyDown(KeyCode.RightShift) | Input.GetKeyDown(KeyCode.LeftShift))
-                                                                            {
-                                                                                x = 18;
-                                                                            }
-                                                                            else
-                                                                            {
-                                                                                if (Input.GetKeyDown(KeyCode.Space))
-                                                                                {
-                                                                                    x = 19;
-                                                                                }
-                                                                                else
-                                                                                {
-                                                                                    if (Input.GetKeyDown(KeyCode.RightControl) | Input.GetKeyDown(KeyCode.LeftControl))
-                                                                                    {
-                                                                                        x = 20;
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        if (Input.GetKeyDown(KeyCode.RightAlt) | Input.GetKeyDown(KeyCode.LeftAlt))
-                                                                                        {
-                                                                                            x = 21;
-                                                                                        }
-                                                                                        else
-                                                                                        {
-                                                                                            if (Input.GetKeyDown(KeyCode.Return))
-                                                                                            {
-                                                                                                x = 22;
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
+            x = 2;
         }
 
+        if (Input.GetKeyDown(KeyCode.Keypad3) | Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            x = 3;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad4) | Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            x = 4;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad5) | Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            x = 5;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad6) | Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            x = 6;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad7) | Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            x = 7;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad8) | Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            x = 8;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad9) | Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            x = 9;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad0) | Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            x = 10;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Period))
+        {
+            x = 11;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Comma))
+        {
+            x = 12;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            x = 13;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Backslash))
+        {
+            x = 14;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            x = 15;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            x = 16;
+        }
+
+        if (Input.GetKeyDown(KeyCode.CapsLock))
+        {
+            x = 17;
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightShift) | Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            x = 18;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            x = 19;
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightControl) | Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            x = 20;
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightAlt) | Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            x = 21;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            x = 22;
+        }
 
         if (x>0)
         {
