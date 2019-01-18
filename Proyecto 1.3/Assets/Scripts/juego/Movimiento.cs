@@ -67,13 +67,11 @@ public class Movimiento : MonoBehaviour {
 
     }
 
-    private void FixedUpdate()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (x == 1)
+        if (collision.gameObject.layer == 9 | collision.gameObject.layer == 10)
         {
-           
-
+            Destroy(collision.gameObject);
         }
-
     }
 }

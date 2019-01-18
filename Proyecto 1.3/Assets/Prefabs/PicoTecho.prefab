@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212806385239784192}
   - component: {fileID: 70721560202178232}
   - component: {fileID: 114603850263483040}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PicoTecho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
