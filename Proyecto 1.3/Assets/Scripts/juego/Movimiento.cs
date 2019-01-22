@@ -11,6 +11,9 @@ public class Movimiento : MonoBehaviour {
     public int vel;
     Rigidbody2D fis;
 
+    public GameObject particulas; // es lo que dara el efecto de destruccion 
+
+
     public float fsalto;
     bool ensuelo = false;
     float radiosuelo = 0.2f;
@@ -71,6 +74,7 @@ public class Movimiento : MonoBehaviour {
     {
         if (collision.gameObject.layer == 9 | collision.gameObject.layer == 10)
         {
+            Instantiate(particulas, collision.transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
     }
