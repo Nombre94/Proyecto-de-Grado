@@ -32,14 +32,7 @@ public class Movimiento : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
-
-        if (Input.GetKeyDown("q"))
-        {
-            x = 1;
-            anim.SetBool("correr", true);
-
-        }
+  
 
         if (ensuelo && Input.GetAxis("Jump") > 0) // aqui salta y confirma que ya no este en el aire 
         {
@@ -74,8 +67,18 @@ public class Movimiento : MonoBehaviour {
     {
         if (collision.gameObject.layer == 9 | collision.gameObject.layer == 10)
         {
+            anim.SetBool("golpe", true);
+            Invoke("normal", 0.3f);
             Instantiate(particulas, collision.transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
+            
+
         }
+    }
+
+
+    private void normal ()
+    {
+        anim.SetBool("golpe", false);
     }
 }

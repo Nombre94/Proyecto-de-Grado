@@ -6,29 +6,35 @@ public class CreacionDeObstaculos : MonoBehaviour {
 
     public GameObject[] obj;
     // estas es la variable que determina que obstaculo crear 
-    float z= 0f;
+    float z = 0f;
     float y = 0f;
+    int x = 0;
 
 	// Use this for initialization
 	void Start ()
     {
+        
+
         Generar();
-		
-	}
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
+
         y = Random.Range(0, 2);
-		
-	}
+       
+
+    }
+
 
     void Generar()
     {
-        if (z== 0)
+ 
+
+
+        if ( z== 0)
         {
-
-
             if (gameObject.layer== 12)
             {
                 Instantiate(obj[0], transform.position, Quaternion.identity);
@@ -38,7 +44,6 @@ public class CreacionDeObstaculos : MonoBehaviour {
         else
         {
             z = 0;
-
             if (gameObject.layer== 13)
             {
                 if (y == 0)
@@ -55,7 +60,10 @@ public class CreacionDeObstaculos : MonoBehaviour {
             }
         }
 
+       
         Invoke("Generar", 3);
 
     }
+
+  
 }
