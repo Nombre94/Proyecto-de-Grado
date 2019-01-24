@@ -1501,7 +1501,7 @@ MonoBehaviour:
   anim: {fileID: 483031744}
   vel: 1
   particulas: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
-  fsalto: 1.2
+  fsalto: 6
   capasuelo:
     serializedVersion: 2
     m_Bits: 256
@@ -1543,7 +1543,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.47, y: 1.02}
+    oldSize: {x: 0.47, y: 1.03}
     newSize: {x: 0.47, y: 1.03}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3195,7 +3195,7 @@ GameObject:
   m_Layer: 12
   m_Name: Creacion Obstaculo Techo
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3395,6 +3395,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj:
   - {fileID: 1974816766155996, guid: 140cf99256fb74245ae1e3ac70954624, type: 2}
+--- !u!1 &1253102326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1253102328}
+  - component: {fileID: 1253102327}
+  m_Layer: 16
+  m_Name: creacion triger
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1253102327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253102326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c737d856d2cafae49b93a7347e29e51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1001877452486110, guid: 5ad169c55e126224ba318f7d34701aad, type: 2}
+  - {fileID: 1097152972179692, guid: d08fa7e1ca57d584287fb79da20b27fd, type: 2}
+  - {fileID: 1589106450016682, guid: 24b299fb8cdbca2439927e1c7fe50e1f, type: 2}
+  - {fileID: 1870726934389838, guid: 70e92e2258710cd44a6a470f696e9b61, type: 2}
+--- !u!4 &1253102328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253102326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.48, y: 0.26, z: 1.1630859}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306836480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,7 +4150,7 @@ GameObject:
   m_Layer: 13
   m_Name: Creacion Obstaculos Suelo
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

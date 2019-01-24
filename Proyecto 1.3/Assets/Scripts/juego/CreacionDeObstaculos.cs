@@ -39,11 +39,15 @@ public class CreacionDeObstaculos : MonoBehaviour {
             {
                 Instantiate(obj[0], transform.position, Quaternion.identity);
             }
+
+            GameManager.acion = 0;
+
             z = 1;
         }
         else
         {
             z = 0;
+            GameManager.acion = 1;
             if (gameObject.layer== 13)
             {
                 if (y == 0)
@@ -55,12 +59,19 @@ public class CreacionDeObstaculos : MonoBehaviour {
                     Instantiate(obj[2], transform.position, Quaternion.identity);
                 }
 
-              
+                
 
             }
+
+          
         }
 
-       
+        if (gameObject.layer == 16)
+        {
+            Instantiate(obj[3], transform.position, Quaternion.identity);
+        }
+
+
         Invoke("Generar", 3);
 
     }
