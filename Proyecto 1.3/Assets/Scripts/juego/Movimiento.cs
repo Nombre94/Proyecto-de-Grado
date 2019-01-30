@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Movimiento : MonoBehaviour {
 
     public Animator anim;
+    public GameObject[] vidas;
+    int contadordevidas=2;
     private int x = 0;  // esta variable nos determina si el usuario ya dio la señal de comienzo 
 
     public int vel;
@@ -59,15 +61,28 @@ public class Movimiento : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 9 | collision.gameObject.layer == 10)
-        {
-            anim.SetBool("golpe", true);
-            Invoke("normal", 0.3f);
-            Instantiate(particulas, collision.transform.position, Quaternion.identity);
-            Destroy(collision.gameObject);
-            
+        
+            if (collision.gameObject.layer == 9 | collision.gameObject.layer == 10)
+            {
+                anim.SetBool("golpe", true);
+                Invoke("normal", 0.3f);
+                Instantiate(particulas, collision.transform.position, Quaternion.identity);
+                Destroy(collision.gameObject);
 
+                Destroy(vidas[contadordevidas]);
+                contadordevidas--;
+
+            }
+        
+            if (contadordevidas < 0)
+        {
+            SceneManager.LoadScene("Menu");
         }
+        
+       
+
+       
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

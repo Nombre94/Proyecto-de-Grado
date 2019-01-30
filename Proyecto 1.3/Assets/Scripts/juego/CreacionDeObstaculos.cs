@@ -40,8 +40,8 @@ public class CreacionDeObstaculos : MonoBehaviour {
                 Instantiate(obj[0], transform.position, Quaternion.identity);
             }
 
-            GameManager.acion = 0;
 
+            GameManager.acion = 0;
             z = 1;
         }
         else
