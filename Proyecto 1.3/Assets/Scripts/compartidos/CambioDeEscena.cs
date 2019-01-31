@@ -15,8 +15,15 @@ public class CambioDeEscena : MonoBehaviour {
 		
 	}
 
-    public void click()
+    public void niveli()
     {
+        GameManager.nivel = 0;
+        SceneManager.LoadScene("Juego");
+    }
+
+    public void nivels()
+    {
+        GameManager.nivel = 1;
         SceneManager.LoadScene("Juego");
     }
 

@@ -7,7 +7,7 @@ public class Movimiento : MonoBehaviour {
 
     public Animator anim;
     public GameObject[] vidas;
-    int contadordevidas=2;
+    int contadordevidas;
     private int x = 0;  // esta variable nos determina si el usuario ya dio la señal de comienzo 
 
     public int vel;
@@ -28,6 +28,7 @@ public class Movimiento : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        contadordevidas = 2;
         fis = GetComponent<Rigidbody2D>();
 
     }
@@ -69,14 +70,21 @@ public class Movimiento : MonoBehaviour {
                 Instantiate(particulas, collision.transform.position, Quaternion.identity);
                 Destroy(collision.gameObject);
 
-                Destroy(vidas[contadordevidas]);
-                contadordevidas--;
+                if(GameManager.nivel==1)
+                {
+                   Destroy(vidas[contadordevidas]);
+                   contadordevidas--;
+                }
+                
 
             }
         
             if (contadordevidas < 0)
         {
-            SceneManager.LoadScene("Menu");
+
+            anim.SetBool("muerte", true);
+
+            Invoke("final", 3);
         }
         
        
@@ -121,5 +129,11 @@ public class Movimiento : MonoBehaviour {
     void pausasalto()
     {
         conf = 0;
+    }
+
+    void final()
+    {
+        anim.SetBool("muerte", false);
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -257,8 +257,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -255.26373}
-  m_SizeDelta: {x: 280, y: 37.32068}
+  m_AnchoredPosition: {x: 200, y: -255.15715}
+  m_SizeDelta: {x: 280, y: 37.3013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110705667
 MonoBehaviour:
@@ -542,8 +542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -105.98102}
-  m_SizeDelta: {x: 280, y: 37.32068}
+  m_AnchoredPosition: {x: 200, y: -105.95195}
+  m_SizeDelta: {x: 280, y: 37.3013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320137464
 MonoBehaviour:
@@ -595,9 +595,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: eb398b6a38e529a45bed72cc435b2d06, type: 3}
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 553212024}
+        m_MethodName: niveli
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -998,8 +998,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -217.94305}
-  m_SizeDelta: {x: 280, y: 37.32068}
+  m_AnchoredPosition: {x: 200, y: -217.85585}
+  m_SizeDelta: {x: 280, y: 37.3013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &426375981
 MonoBehaviour:
@@ -1051,9 +1051,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: eb398b6a38e529a45bed72cc435b2d06, type: 3}
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 553212024}
+        m_MethodName: nivels
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2880,8 +2880,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -87.32068}
-  m_SizeDelta: {x: 280, y: 74.64136}
+  m_AnchoredPosition: {x: 200, y: -87.3013}
+  m_SizeDelta: {x: 280, y: 74.6026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694228652
 MonoBehaviour:
@@ -3131,8 +3131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -236.6034}
-  m_SizeDelta: {x: 280, y: 74.64136}
+  m_AnchoredPosition: {x: 200, y: -236.5065}
+  m_SizeDelta: {x: 280, y: 74.6026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722656947
 MonoBehaviour:
@@ -3491,8 +3491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -143.3017}
-  m_SizeDelta: {x: 280, y: 37.32068}
+  m_AnchoredPosition: {x: 200, y: -143.25325}
+  m_SizeDelta: {x: 280, y: 37.3013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854885654
 MonoBehaviour:
@@ -3544,9 +3544,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: eb398b6a38e529a45bed72cc435b2d06, type: 3}
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 553212024}
+        m_MethodName: niveli
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3930,8 +3930,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -68.66034}
-  m_SizeDelta: {x: 280, y: 37.32068}
+  m_AnchoredPosition: {x: 200, y: -68.65065}
+  m_SizeDelta: {x: 280, y: 37.3013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974474761
 MonoBehaviour:
@@ -3984,7 +3984,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 553212024}
-        m_MethodName: click
+        m_MethodName: niveli
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4275,8 +4275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -180.62238}
-  m_SizeDelta: {x: 280, y: 37.32068}
+  m_AnchoredPosition: {x: 200, y: -180.55455}
+  m_SizeDelta: {x: 280, y: 37.3013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981471812
 MonoBehaviour:
@@ -4328,9 +4328,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: eb398b6a38e529a45bed72cc435b2d06, type: 3}
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 553212024}
+        m_MethodName: nivels
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4409,8 +4409,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -161.96204}
-  m_SizeDelta: {x: 280, y: 74.64136}
+  m_AnchoredPosition: {x: 200, y: -161.9039}
+  m_SizeDelta: {x: 280, y: 74.6026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998822791
 MonoBehaviour:
