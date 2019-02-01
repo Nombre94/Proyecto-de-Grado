@@ -26,7 +26,8 @@ public class Movimiento : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
 
         contadordevidas = 2;
         fis = GetComponent<Rigidbody2D>();
@@ -134,6 +135,6 @@ public class Movimiento : MonoBehaviour {
     void final()
     {
         anim.SetBool("muerte", false);
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("gameover");
     }
 }

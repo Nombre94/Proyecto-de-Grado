@@ -27,6 +27,10 @@ public class CambioDeEscena : MonoBehaviour {
         SceneManager.LoadScene("Juego");
     }
 
+    public void reset()
+    {
+        SceneManager.LoadScene("Juego");
+    }
     public void Menu()
     {
         
