@@ -28,7 +28,7 @@ public class Gameover : MonoBehaviour {
 
     void fondo()
     {
-        reproductor.volume = GameManager.volmusic;
+        reproductor.volume = PlayerPrefs.GetFloat("volumen", 1); 
         reproductor.clip = gameover1;
         reproductor.Play();
 

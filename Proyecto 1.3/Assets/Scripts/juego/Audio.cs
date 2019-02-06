@@ -23,7 +23,7 @@ public class Audio : MonoBehaviour {
         random = 0;
         reproductor = GetComponent<AudioSource>();
      
-        volumen.value = GameManager.volmusic;
+        volumen.value = PlayerPrefs.GetFloat("volumen", 1);
 
         random = Random.Range(1, 4);
 
@@ -51,6 +51,6 @@ public class Audio : MonoBehaviour {
 
         reproductor.volume = volumen.value;
         GameManager.volmusic = volumen.value;
-
+        PlayerPrefs.SetFloat("volumen", GameManager.volmusic);
     }
 }
