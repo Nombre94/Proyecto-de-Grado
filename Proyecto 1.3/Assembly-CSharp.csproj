@@ -64,6 +64,7 @@
     <Compile Include="Assets\MenuUI\Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\MenuUI\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\MenuUI\Scripts\SelectOnInput.cs" />
+    <Compile Include="Assets\Scripts\carga\cambioimagcarga.cs" />
     <Compile Include="Assets\Scripts\compartidos\CambioDeEscena.cs" />
     <Compile Include="Assets\Scripts\compartidos\GameManager.cs" />
     <Compile Include="Assets\Scripts\compartidos\RelacionDeAspecto.cs" />

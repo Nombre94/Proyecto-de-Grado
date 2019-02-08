@@ -18,18 +18,18 @@ public class CambioDeEscena : MonoBehaviour {
     public void niveli()
     {
         GameManager.nivel = 0;
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("carga");
     }
 
     public void nivels()
     {
         GameManager.nivel = 1;
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("carga");
     }
 
     public void reset()
     {
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("carga");
     }
     public void Menu()
     {
