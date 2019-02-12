@@ -2,20 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// este script se encarga del movimiento del fondo del menu
 public class movfondomenu : MonoBehaviour {
 
     public float speed = -2f;          // la velocidad del fondo 
     private float posreini = -24.21f; //la posicion donde se reinicia
     private float posini = 79.9f;      // donde aparece de nuevo 
 
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
+	// en esta funcionse va tranformando la poscicion del fondo paulatinamente y a una velocidad determinada 
 	void Update ()
     {
         transform.Translate(speed*Time.deltaTime, 0, 0);

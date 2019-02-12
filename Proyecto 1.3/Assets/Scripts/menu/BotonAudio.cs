@@ -73,7 +73,7 @@ public class BotonAudio : MonoBehaviour {
 
     }
 
-    public void click () // en esta clase eliminamos y ponemos el audio
+    public void click () // en esta clase pausamos y ponemos el audio 
     {
 
         if (x == 0)

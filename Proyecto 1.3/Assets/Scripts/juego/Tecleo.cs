@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//este script es el encargado de iluminar el telado cada ves que se presione una tecla 
 public class Tecleo : MonoBehaviour {
     public GameObject[] obj;
     string name;
@@ -16,20 +16,23 @@ public class Tecleo : MonoBehaviour {
     int conf=0; // esta variable es para confirmar que ya se presiono una tecla base y no salte a las especiales 
     int x; // esta variable onfirma si se presiono una tecla especial para enviarla a generar
  
-    // Use this for initialization
+   
 
+    // al inicializarse se hace el llamado una funcion de relleno
     void Start() {
        
         rellenar();
         
     }
 	
-	// Update is called once per frame
+	// en esta funcion va determinado continuamente que tecla se presiona 
 	void Update () {
         conf = 0;
 
+        // se mirra si la tecla presionada es una base o especial 
         for (int i = 0; i < tamaño; i++)
         {
+            //al ser una tecla base se determina que tecla es y se envia a la funcion generar
             if (Input.GetKeyDown(abc[i]))
             {
                 name = abc[i];             
@@ -39,8 +42,10 @@ public class Tecleo : MonoBehaviour {
             }           
         }
 
+
        if (conf == 0)
         {
+            // si es una tecla especial se llama a la funcion de especiales 
             especiales();
         }
 
