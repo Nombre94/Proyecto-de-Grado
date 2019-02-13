@@ -41,7 +41,16 @@ public class GeneracionDeEscenario : MonoBehaviour {
         }
 
         //luego de su cracion se reinvoca esta misma funcio con un desfaz determinado
-        Invoke("GenerarTecho", 2);
+        
+        if (GameManager.velocidad < 8)
+        {
+            Invoke("GenerarTecho", 2);
+        }
+        else
+        {
+            Invoke("GenerarTecho", 1);
+        }
+        
         
     }
 
@@ -51,7 +60,14 @@ public class GeneracionDeEscenario : MonoBehaviour {
     {
         Instantiate(obj[2], transform.position, Quaternion.identity);
 
-        Invoke("GenerarPiso", 2);
+        if (GameManager.velocidad < 8)
+        {
+            Invoke("GenerarPiso", 2);
+        }
+        else
+        {
+            Invoke("GenerarPiso", 1);
+        }
     }
 
     

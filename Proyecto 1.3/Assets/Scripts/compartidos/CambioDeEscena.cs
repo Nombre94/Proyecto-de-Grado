@@ -6,17 +6,32 @@ using UnityEngine.SceneManagement;
 // este script es el encargado de manejar los cambios de escenas en las pantallas de menu, juego y pantallas finales 
 public class CambioDeEscena : MonoBehaviour {
 
-    // es enta primer clase si el usuario presiona alguno de los 3 primeros niveles se le dijira al juego con el nivel basico
-    public void niveli()
+    // es enta primer clase si el usuario presiona alguno de los 3 primeros niveles se le dijire al juego con el nivel basico
+    public void niveli12()
     {
         GameManager.nivel = 0;
+        GameManager.velocidad = 6;
+        SceneManager.LoadScene("carga");
+    }
+    public void niveli3()
+    {
+        GameManager.nivel = 0;
+        GameManager.velocidad = 7;
         SceneManager.LoadScene("carga");
     }
 
     // esta clase se ejecuta cuando selecciona los 2 utimos niveles pasandolo a la pantalla de juego con el nivl avanzado
-    public void nivels()
+    public void nivels4()
     {
         GameManager.nivel = 1;
+        GameManager.velocidad = 8;
+        SceneManager.LoadScene("carga");
+    }
+
+    public void nivels5()
+    {
+        GameManager.nivel = 1;
+        GameManager.velocidad = 9;
         SceneManager.LoadScene("carga");
     }
 
