@@ -44,7 +44,15 @@ public class CreacionDeObstaculos : MonoBehaviour {
             }
 
             // una vez terminada se guarda un tipo de accion determinado por el obstaculo que se creo
-            GameManager.acion = 0;
+            if (GameManager.velocidad<9)
+            {
+                GameManager.acion = 0;
+            }
+            else
+            {
+                GameManager.acion = 1;
+            }
+            
             z = 1;
         }
 
@@ -53,7 +61,14 @@ public class CreacionDeObstaculos : MonoBehaviour {
         {
             // al igual que con el obstaculo alto en este caso tambien se selecciona una accion determinada
             z = 0;
-            GameManager.acion = 1;
+            if (GameManager.velocidad< 9)
+            {
+                GameManager.acion = 1;
+            }
+            else
+            {
+                GameManager.acion = 0;
+            }
 
             // se verifica si es el espacio donde se va a crear es el correcto
             if (gameObject.layer== 13)
