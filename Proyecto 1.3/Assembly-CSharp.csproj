@@ -76,6 +76,13 @@
     <Compile Include="Assets\Scripts\juego\GeneracionDeEscenario.cs" />
     <Compile Include="Assets\Scripts\juego\Movimiento.cs" />
     <Compile Include="Assets\Scripts\juego\MovimientoEscenario.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\Generador.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\Word.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\worddisplay.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\Wordinput.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\wordmanager.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\wordspawn.cs" />
+    <Compile Include="Assets\Scripts\juego\sistema de palabras\wordtime.cs" />
     <Compile Include="Assets\Scripts\juego\Tecleo.cs" />
     <Compile Include="Assets\Scripts\menu\BotonAudio.cs" />
     <Compile Include="Assets\Scripts\menu\movfondomenu.cs" />
