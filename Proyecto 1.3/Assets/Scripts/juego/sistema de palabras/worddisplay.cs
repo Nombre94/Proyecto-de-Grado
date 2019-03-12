@@ -28,6 +28,7 @@ public class worddisplay : MonoBehaviour
 
     public void Update()
     {
+        vel = GameManager.velcaida;
         transform.Translate(0f, -vel * Time.deltaTime, 0f);
     }
 

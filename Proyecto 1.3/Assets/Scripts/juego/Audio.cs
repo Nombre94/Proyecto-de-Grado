@@ -15,8 +15,9 @@ public class Audio : MonoBehaviour {
     
     AudioSource reproductor;
 
-    // se crea una variable que determinara el volumen musical
+    // se crea una variable que determinara el volumen musical y la velocidad
     public Slider volumen;
+    
 
     // se crea una variable random que determinaa que fondo musical se usara
     private float random;

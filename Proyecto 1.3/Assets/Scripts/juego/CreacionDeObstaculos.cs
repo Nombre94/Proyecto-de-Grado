@@ -98,7 +98,7 @@ public class CreacionDeObstaculos : MonoBehaviour {
         }
 
         // luego de toda la ejecucion se reinvoca esta misma funcion con un desfaz entre cada obstaculo
-        Invoke("Generar", 3);
+        Invoke("Generar", GameManager.delayobs);
 
     }
 

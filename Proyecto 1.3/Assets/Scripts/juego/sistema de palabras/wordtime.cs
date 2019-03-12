@@ -11,6 +11,7 @@ public class wordtime : MonoBehaviour
 
     private void Update()
     {
+        worddelay = GameManager.delay;
         if (Time.time >= nextwordtime)
         {
             wordmanager.Addword();

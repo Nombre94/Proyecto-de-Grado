@@ -15,7 +15,9 @@ public class MovimientoEscenario : MonoBehaviour {
     }
     // en esta funcion se va modificando la poscicion de las partes del escenario de forma continua y a una velocidad determiada 
     // ademas de determinar si en objeto ya salio del campo visual del ussuario para asi destruirlo 
-    void Update () {
+    void Update ()
+    {
+        vel = GameManager.velocidad;
 
         transform.Translate(-vel * Time.deltaTime, 0, 0);
 

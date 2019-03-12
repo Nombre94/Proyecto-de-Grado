@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\juego\sistema de palabras\wordspawn.cs" />
     <Compile Include="Assets\Scripts\juego\sistema de palabras\wordtime.cs" />
     <Compile Include="Assets\Scripts\juego\Tecleo.cs" />
+    <Compile Include="Assets\Scripts\juego\velocidad.cs" />
     <Compile Include="Assets\Scripts\menu\BotonAudio.cs" />
     <Compile Include="Assets\Scripts\menu\movfondomenu.cs" />
     <Compile Include="Assets\Scripts\menu\Movopciones.cs" />
