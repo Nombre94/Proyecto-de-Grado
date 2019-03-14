@@ -7,15 +7,24 @@ using UnityEngine.SceneManagement;
 public class CambioDeEscena : MonoBehaviour {
 
     // es enta primer clase si el usuario presiona alguno de los 3 primeros niveles se le dijire al juego con el nivel basico
-    public void niveli12()
+    public void niveli1()
     {
         GameManager.nivel = 0;
+        GameManager.borrado = 0;
+        GameManager.velocidad = 6;
+        SceneManager.LoadScene("carga");
+    }
+    public void niveli2()
+    {
+        GameManager.nivel = 0;
+        GameManager.borrado = 1;
         GameManager.velocidad = 6;
         SceneManager.LoadScene("carga");
     }
     public void niveli3()
     {
         GameManager.nivel = 0;
+        GameManager.borrado = 1;
         GameManager.velocidad = 7;
         SceneManager.LoadScene("carga");
     }
@@ -24,6 +33,7 @@ public class CambioDeEscena : MonoBehaviour {
     public void nivels4()
     {
         GameManager.nivel = 1;
+        GameManager.borrado = 1;
         GameManager.velocidad = 8;
         SceneManager.LoadScene("carga");
     }
@@ -31,6 +41,7 @@ public class CambioDeEscena : MonoBehaviour {
     public void nivels5()
     {
         GameManager.nivel = 1;
+        GameManager.borrado = 1;
         GameManager.velocidad = 9;
         SceneManager.LoadScene("carga");
     }

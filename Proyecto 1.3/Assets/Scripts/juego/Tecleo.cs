@@ -20,7 +20,8 @@ public class Tecleo : MonoBehaviour {
 
     // al inicializarse se hace el llamado una funcion de relleno
     void Start() {
-       
+
+        borradas();
         rellenar();
         
     }
@@ -49,6 +50,31 @@ public class Tecleo : MonoBehaviour {
             especiales();
         }
 
+
+    }
+
+    void borradas()
+    {
+        if (GameManager.borrado==1)
+        {
+            if (gameObject.tag == "primeras" & GameManager.velocidad >= 6)
+            {
+                Instantiate(obj[1], transform.position, Quaternion.identity);
+            }
+            if (gameObject.tag == "segundas" & GameManager.velocidad >=7)
+            {
+                Instantiate(obj[1], transform.position, Quaternion.identity);
+            }
+            if (gameObject.tag == "terceras" & GameManager.velocidad >= 8)
+            {
+                Instantiate(obj[1], transform.position, Quaternion.identity);
+            }
+            if (gameObject.tag == "cuartas" & GameManager.velocidad >= 9)
+            {
+                Instantiate(obj[1], transform.position, Quaternion.identity);
+            }
+
+        }
 
     }
 

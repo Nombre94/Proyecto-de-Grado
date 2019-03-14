@@ -9,6 +9,7 @@ public class GameManager
     public static float velcaida;
     public static float delay;
     public static float delayobs=3;
+    public static int borrado;
     
  
     
