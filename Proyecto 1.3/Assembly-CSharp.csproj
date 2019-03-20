@@ -69,6 +69,13 @@
     <Compile Include="Assets\Scripts\compartidos\GameManager.cs" />
     <Compile Include="Assets\Scripts\compartidos\RelacionDeAspecto.cs" />
     <Compile Include="Assets\Scripts\compartidos\Scroll.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\Generador2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\Word2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\worddisplay2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\Wordinput2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\wordmanager2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\wordspawn2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\wordtime2.cs" />
     <Compile Include="Assets\Scripts\Game over and victory\Gameover.cs" />
     <Compile Include="Assets\Scripts\juego\Audio.cs" />
     <Compile Include="Assets\Scripts\juego\autodestruccion.cs" />

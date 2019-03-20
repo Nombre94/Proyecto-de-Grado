@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Juego.unity
+- path: Assets/Scenes/Evaluacion.unity
   isLoaded: 1
   isActive: 1
