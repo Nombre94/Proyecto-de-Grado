@@ -9,14 +9,9 @@ public class wordtime2 : MonoBehaviour
     public float worddelay = 1.5f;
     public float nextwordtime = 0f;
 
-    private void Update()
+    public void Start()
     {
-        //worddelay = GameManager.delay;
-        if (Time.time >= nextwordtime)
-        {
-            wordmanager.Addword();
-            nextwordtime = Time.time + worddelay;
-        }
+        wordmanager.Addword();
     }
 
 

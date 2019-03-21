@@ -14,6 +14,7 @@ public class Wordinput2 : MonoBehaviour
         foreach (char letra in Input.inputString)
         {
             wordmanager.Type(letra);
+
         }
     }
 }

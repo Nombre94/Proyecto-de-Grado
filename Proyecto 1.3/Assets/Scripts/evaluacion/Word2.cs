@@ -22,6 +22,7 @@ public class Word2
 
     public char Nextletra()
     {
+        Debug.Log(word[typeindex+2]);
         return word[typeindex];
     }
 

@@ -6,7 +6,7 @@ using UnityEngine;
 // en este script se crea la lista de palabras que se mostraran al usuario 
 public class Generador2 : MonoBehaviour
 {
-    private static string[] lista = { "uno", "dos", "tres", "cuatro", "cinco" };
+    private static string[] lista = { "uno dos tres () {} \ncuatro cinco" };
 
     public static string GetRandomWord()
     {
