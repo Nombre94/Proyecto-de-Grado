@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\compartidos\RelacionDeAspecto.cs" />
     <Compile Include="Assets\Scripts\compartidos\Scroll.cs" />
     <Compile Include="Assets\Scripts\evaluacion\Generador2.cs" />
+    <Compile Include="Assets\Scripts\evaluacion\Timer.cs" />
     <Compile Include="Assets\Scripts\evaluacion\Word2.cs" />
     <Compile Include="Assets\Scripts\evaluacion\worddisplay2.cs" />
     <Compile Include="Assets\Scripts\evaluacion\Wordinput2.cs" />
