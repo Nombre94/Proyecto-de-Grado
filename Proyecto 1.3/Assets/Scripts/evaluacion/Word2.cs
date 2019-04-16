@@ -22,14 +22,23 @@ public class Word2
 
     public char Nextletra()
     {
-        Debug.Log(word[typeindex+2]);
+        
         return word[typeindex];
     }
 
     public void Typeletra()
     {
-        typeindex++;
+        if (GameManager.enter == 1)
+        {
+            typeindex = typeindex + 2;
+            GameManager.enter = 0;
+            display.removerletra();
 
+        }
+        else
+        {
+            typeindex++;
+        }
         display.removerletra();
     }
 

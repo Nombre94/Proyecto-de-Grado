@@ -13,6 +13,10 @@ public class Wordinput2 : MonoBehaviour
 
         foreach (char letra in Input.inputString)
         {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                GameManager.enter = 1;
+            }
             wordmanager.Type(letra);
 
         }

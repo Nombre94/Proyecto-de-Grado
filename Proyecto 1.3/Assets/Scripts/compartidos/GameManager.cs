@@ -11,6 +11,7 @@ public class GameManager
     public static float delayobs=3;
     public static int borrado;
     public static int tiempo;
+    public static int enter;
  
     
 }

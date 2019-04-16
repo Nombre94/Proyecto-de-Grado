@@ -27,6 +27,7 @@ public class wordmanager2 : MonoBehaviour
     public void Type(char letra)
     {
         GameManager.tiempo = 1;
+
         if (hasactiveword)
         {
             if (activeword.Nextletra() == letra)
