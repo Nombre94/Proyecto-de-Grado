@@ -12,6 +12,7 @@ public class GameManager
     public static int borrado;
     public static int tiempo;
     public static int enter;
+    public static int fin;
  
     
 }

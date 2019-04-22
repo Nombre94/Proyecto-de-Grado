@@ -7,12 +7,13 @@ public class Timer : MonoBehaviour {
 
     public Text text;
     public float tiempo;
-    
+    public GameObject panel;
 
 	// Use this for initialization
 	void Start ()
     {
         GameManager.tiempo = 0;
+        GameManager.fin = 0;
         tiempo = 0;
 	}
 	
@@ -24,8 +25,11 @@ public class Timer : MonoBehaviour {
             tiempo = tiempo + 1 * Time.deltaTime;
             text.text = "" + tiempo.ToString("f0");
         }
-        
 
+        if (GameManager.fin == 1)
+        {
+            panel.SetActive(true);
+        }
 
     }
 }

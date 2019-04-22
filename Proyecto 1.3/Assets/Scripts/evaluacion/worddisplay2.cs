@@ -23,6 +23,8 @@ public class worddisplay2 : MonoBehaviour
 
     public void removerword()
     {
+        GameManager.tiempo = 0;
+        GameManager.fin = 1;
         Destroy(gameObject);
     }
 
