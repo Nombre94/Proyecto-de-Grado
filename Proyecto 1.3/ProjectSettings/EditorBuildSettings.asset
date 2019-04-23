@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/carga.unity
     guid: fa4266ba9f7187d4faa18127b544ad73
+  - enabled: 1
+    path: Assets/Scenes/Evaluacion.unity
+    guid: ce6e3cc4a4fc3f247a62e807a91f3ffc
   m_configObjects: {}

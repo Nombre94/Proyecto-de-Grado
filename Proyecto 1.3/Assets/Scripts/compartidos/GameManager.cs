@@ -13,7 +13,7 @@ public class GameManager
     public static int tiempo;
     public static int enter;
     public static int fin;
- 
+    public static int codigo;
     
 }
 

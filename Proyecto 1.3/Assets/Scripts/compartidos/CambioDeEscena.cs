@@ -59,4 +59,10 @@ public class CambioDeEscena : MonoBehaviour {
         
         SceneManager.LoadScene("Menu");
     }
+
+    public void Evaluacion()
+    {
+
+        SceneManager.LoadScene("Evaluacion");
+    }
 }

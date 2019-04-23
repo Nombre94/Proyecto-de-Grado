@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 46302624}
   - component: {fileID: 46302623}
   - component: {fileID: 46302622}
+  - component: {fileID: 46302626}
   m_Layer: 5
   m_Name: MenuJuego
   m_TagString: Untagged
@@ -222,6 +223,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 46302620}
   m_CullTransparentMesh: 0
+--- !u!114 &46302626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 46302620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f3196ad66367443b045c44f62b8e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &110705665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,9 +1909,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: eb398b6a38e529a45bed72cc435b2d06, type: 3}
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 46302626}
+        m_MethodName: Evaluacion
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
