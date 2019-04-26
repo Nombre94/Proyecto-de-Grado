@@ -40,8 +40,8 @@ public class Timer : MonoBehaviour {
 
             panel.SetActive(true);
 
-            resulA.text = "" + guar + "car/seg";
-            resulN.text = "" + resul + "car/seg";
+            resulA.text = "" + guar + " car/seg";
+            resulN.text = "" + resul + " car/seg";
         }
 
     }
