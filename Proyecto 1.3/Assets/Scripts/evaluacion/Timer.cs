@@ -10,8 +10,11 @@ public class Timer : MonoBehaviour {
     public GameObject panel;
     public Text resulA;
     public Text resulN;
+    public Text errores;
+    public Text mejor;
     private float resul;
     public float guar;
+    public float mejorresul;
 
     private static int[] caracteres = {252, 429, 224, 454, 251};
 
@@ -20,7 +23,9 @@ public class Timer : MonoBehaviour {
     {
         GameManager.tiempo = 0;
         GameManager.fin = 0;
+        GameManager.conterrores=0;
         tiempo = 0;
+        mejorresul = PlayerPrefs.GetFloat("mejor", 0);
         guar = PlayerPrefs.GetFloat("resul", 0);
     }
 	
@@ -38,10 +43,18 @@ public class Timer : MonoBehaviour {
             resul = caracteres[GameManager.codigo] / tiempo;
             PlayerPrefs.SetFloat("resul", resul);
 
+            if (mejorresul < resul)
+            {
+                mejorresul = resul;
+                PlayerPrefs.SetFloat("mejor", resul);
+            }
+
             panel.SetActive(true);
 
             resulA.text = "" + guar + " car/seg";
             resulN.text = "" + resul + " car/seg";
+            mejor.text = "" + mejorresul + " car/seg";
+            errores.text = "" + GameManager.conterrores + " letras";
         }
 
     }

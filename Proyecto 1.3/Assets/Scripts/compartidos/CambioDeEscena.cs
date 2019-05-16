@@ -12,6 +12,7 @@ public class CambioDeEscena : MonoBehaviour {
         GameManager.nivel = 0;
         GameManager.borrado = 0;
         GameManager.velocidad = 6;
+        GameManager.caidabase = 0.3f;
         SceneManager.LoadScene("carga");
     }
     public void niveli2()
@@ -19,6 +20,7 @@ public class CambioDeEscena : MonoBehaviour {
         GameManager.nivel = 0;
         GameManager.borrado = 1;
         GameManager.velocidad = 6;
+        GameManager.caidabase = 0.4f;
         SceneManager.LoadScene("carga");
     }
     public void niveli3()
@@ -26,6 +28,7 @@ public class CambioDeEscena : MonoBehaviour {
         GameManager.nivel = 0;
         GameManager.borrado = 1;
         GameManager.velocidad = 7;
+        GameManager.caidabase = 0.6f;
         SceneManager.LoadScene("carga");
     }
 
@@ -35,6 +38,7 @@ public class CambioDeEscena : MonoBehaviour {
         GameManager.nivel = 1;
         GameManager.borrado = 1;
         GameManager.velocidad = 8;
+        GameManager.caidabase = 0.8f;
         SceneManager.LoadScene("carga");
     }
 
@@ -43,6 +47,7 @@ public class CambioDeEscena : MonoBehaviour {
         GameManager.nivel = 1;
         GameManager.borrado = 1;
         GameManager.velocidad = 9;
+        GameManager.caidabase = 1f;
         SceneManager.LoadScene("carga");
     }
 

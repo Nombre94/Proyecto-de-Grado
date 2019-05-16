@@ -34,6 +34,10 @@ public class wordmanager2 : MonoBehaviour
             {
                 activeword.Typeletra();
             }
+            else
+            {
+                GameManager.conterrores = GameManager.conterrores + 1;
+            }
 
         }
         else
@@ -47,6 +51,11 @@ public class wordmanager2 : MonoBehaviour
                     word.Typeletra();
                     break;
                 }
+                else
+                {
+                    GameManager.conterrores = GameManager.conterrores + 1;
+                }
+
             }
         }
 
@@ -55,7 +64,7 @@ public class wordmanager2 : MonoBehaviour
             hasactiveword = false;
             words.Remove(activeword);
         }
-
+       
     }
 
 }

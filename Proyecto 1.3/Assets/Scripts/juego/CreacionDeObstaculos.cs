@@ -11,11 +11,14 @@ public class CreacionDeObstaculos : MonoBehaviour {
     float z = 0f;
     float y = 0f;
     int x = 0;
+    int contador;
+    private int inicio;
 
 	// al inicializarse llo unico que hace es hacer el llamado a la funcion generar
 	void Start ()
     {
 
+        inicio = 0;
         Generar();
     }
 	
@@ -25,81 +28,94 @@ public class CreacionDeObstaculos : MonoBehaviour {
     {
 
         y = Random.Range(0, 2);
-       
+  
 
     }
 
     // esta funcion es la encargada de seleccionar el obstaculo a utilizar
     void Generar()
     {
- 
-
-        //dependiendo de la variable z se determina primero si el obstaculo es alto o terrestre 
-        if ( z== 0)
+        if (inicio == 0 || GameManager.muerte == 1)
         {
-            //luego se determina si el espacio donde se va a crear es el correspondiente y si lo es se procede a la creacion del mismo
-            if (gameObject.layer== 12)
+            if (GameManager.muerte == 1)
             {
-                Instantiate(obj[0], transform.position, Quaternion.identity);
-            }
-
-            // una vez terminada se guarda un tipo de accion determinado por el obstaculo que se creo
-            if (GameManager.velocidad<9)
-            {
-                GameManager.acion = 0;
+                z = 3;
             }
             else
             {
-                GameManager.acion = 1;
+                inicio = 1;
+                Invoke("Generar", GameManager.delayobs);
             }
-            
-            z = 1;
-        }
+           
 
-        // si no es alto pasa a selecionar el tipo de obstaculo terrestre
+        }
         else
         {
-            // al igual que con el obstaculo alto en este caso tambien se selecciona una accion determinada
-            z = 0;
-            if (GameManager.velocidad< 9)
+
+            //dependiendo de la variable z se determina primero si el obstaculo es alto o terrestre 
+            if (z == 0)
             {
-                GameManager.acion = 1;
+                //luego se determina si el espacio donde se va a crear es el correspondiente y si lo es se procede a la creacion del mismo
+                if (gameObject.layer == 12)
+                {
+                    Instantiate(obj[0], transform.position, Quaternion.identity);
+                }
+
+                // una vez terminada se guarda un tipo de accion determinado por el obstaculo que se creo
+
+
+                z = 1;
+            }
+
+            // si no es alto pasa a selecionar el tipo de obstaculo terrestre
+            else
+            {
+
+                z = 0;
+
+
+                // se verifica si es el espacio donde se va a crear es el correcto
+                if (gameObject.layer == 13)
+                {
+                    // y por medio de la variable Y se determina el tipo de obstaculo terrestre que se usara 
+                    if (y == 0)
+                    {
+                        Instantiate(obj[1], transform.position, Quaternion.identity);
+
+                    }
+                    else
+                    {
+                        Instantiate(obj[2], transform.position, Quaternion.identity);
+
+                    }
+
+
+                }
+
+
+            }
+
+            // por ultimo se crea en un espacio determinado un objeto especial el cual sera el encargado de ejecutar las acciones 
+            // que se determinaron 
+            if (gameObject.layer == 16)
+            {
+                Instantiate(obj[3], transform.position, Quaternion.identity);
+ 
+            }
+
+            contador = contador + 2;
+            // luego de toda la ejecucion se reinvoca esta misma funcion con un desfaz entre cada obstaculo
+            if (contador < 35 & GameManager.muerte == 0)
+            {
+                Invoke("Generar", GameManager.delayobs);
             }
             else
             {
-                GameManager.acion = 0;
+                GameManager.final = 1;
             }
 
-            // se verifica si es el espacio donde se va a crear es el correcto
-            if (gameObject.layer== 13)
-            {
-                // y por medio de la variable Y se determina el tipo de obstaculo terrestre que se usara 
-                if (y == 0)
-                {
-                    Instantiate(obj[1], transform.position, Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(obj[2], transform.position, Quaternion.identity);
-                }
 
-                
-
-            }
-
-          
         }
-
-        // por ultimo se crea en un espacio determinado un objeto especial el cual sera el encargado de ejecutar las acciones 
-        // que se determinaron 
-        if (gameObject.layer == 16)
-        {
-            Instantiate(obj[3], transform.position, Quaternion.identity);
-        }
-
-        // luego de toda la ejecucion se reinvoca esta misma funcion con un desfaz entre cada obstaculo
-        Invoke("Generar", GameManager.delayobs);
-
     }
 
   

@@ -23,13 +23,32 @@ public class worddisplay : MonoBehaviour
 
     public void removerword()
     {
-        Destroy(gameObject);
+        if (GameManager.limite==1)
+        {
+            GameManager.acierto = 2;
+            GameManager.contperdidas = GameManager.contperdidas + 1;
+            Destroy(gameObject);
+        }
+        else
+        {
+            GameManager.contaciertos = GameManager.contaciertos + 1;
+            GameManager.acierto = 1;
+            Destroy(gameObject);
+        }
+
+        
     }
 
     public void Update()
     {
         vel = GameManager.velcaida;
         transform.Translate(0f, -vel * Time.deltaTime, 0f);
+
+        if (transform.position.y <= -5)
+        {
+            GameManager.limite = 1;
+            removerword();
+        }
     }
 
 }

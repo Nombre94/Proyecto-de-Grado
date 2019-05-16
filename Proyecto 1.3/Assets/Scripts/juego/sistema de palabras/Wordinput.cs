@@ -15,5 +15,10 @@ public class Wordinput : MonoBehaviour
         {
             wordmanager.Type(letra);
         }
+
+        if(GameManager.limite==1)
+        {
+            wordmanager.Type('x');
+        }
 	}
 }
